@@ -13,6 +13,8 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 // allows us to parse json
 app.use(express.json());
+app.use(express.static('public')) 
+
 
 // 
 const uri = process.env.ATLAS_URI;
